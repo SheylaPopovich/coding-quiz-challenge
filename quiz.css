@@ -11,7 +11,7 @@ h2 {
     color:rgb(26,3,199);
 }
 
-.container {
+.quizBox {
     display: flex;
     flex-wrap: wrap;
     color: rgb(255, 255, 255);
@@ -56,14 +56,14 @@ h2 {
 .choice-text {
     font-size: 1.3rem;
     padding-top: 1%;
-    width 100%;
+    width: 100%;
 }
 
-.correct{
+.correct {
     background: green;
 }
 
-.incorrect{
+.incorrect {
     background:red;
 }
 
