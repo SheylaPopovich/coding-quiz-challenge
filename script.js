@@ -10,7 +10,8 @@ function setTime() {
 
         if(secondsLeft === 0) {
             clearInterval(timerInterval);
-            sendMessage();
+            sendMessage(); 
+            location.href ="finalscore.html";
         } 
 
     }, 600);
@@ -61,11 +62,44 @@ let questions = [
         choice4: "33",
         answer: 3,
     },
+    {
+        question: "What is 3+3?",
+        choice1: "2",
+        choice2: "4",
+        choice3: "6",
+        choice4: "33",
+        answer: 3,
+    },
+    {
+        question: "What is 3+3?",
+        choice1: "2",
+        choice2: "4",
+        choice3: "6",
+        choice4: "33",
+        answer: 3,
+    },
+    {
+        question: "What is 3+3?",
+        choice1: "2",
+        choice2: "4",
+        choice3: "6",
+        choice4: "33",
+        answer: 3,
+    },
+    {
+        question: "What is 3+3?",
+        choice1: "2",
+        choice2: "4",
+        choice3: "6",
+        choice4: "33",
+        answer: 3,
+    },
+
 ]
 
 //constants
 const WRONG_ANSWERS = 5;
-const MAX_QUESTIONS = 3;
+const TOTAL_QUESTIONS = 7;
 
 
  function startGame () {
@@ -77,7 +111,7 @@ const MAX_QUESTIONS = 3;
 };
 
 function getNewQuestion (){
-    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
+    if(availableQuestions.length === 0 || questionCounter >= TOTAL_QUESTIONS){
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign("finalscore.html");
     }
@@ -110,7 +144,8 @@ choices.forEach( choice => {
 
         //set timer to decrease by 5 or 10 when wrong answer is selected
         if (classToApply === "incorrect") {
-        }
+            secondsLeft -= 10;
+                }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
