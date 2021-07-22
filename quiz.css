@@ -12,15 +12,14 @@ h2 {
     display: flex;
     margin-top: 3%;
     margin-left: 80%;
-    color:rgb(26,3,199);
+    color:rgb(255,255,255);
     font-family: 'Press Start 2P', cursive;
     font-size: 1.2rem;
-    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #0571fe, 0 0 0.3em #0571fe;
 }
 
 .quizBox {
-    display: flex;
-    flex-wrap: wrap;
+     display: flex; 
+     flex-wrap: wrap; 
     color: rgb(255, 255, 255);
     margin-top: 3%;
     margin-left: 5%;
@@ -32,9 +31,9 @@ h2 {
 }
 
 #question {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-bottom: 3%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Oswald', sans-serif;
 }
 
 .choice-container {
@@ -68,7 +67,7 @@ h2 {
     padding-top: 1%;
     padding-left: 8%;
     width: 100%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Oswald', sans-serif;
     text-align: left;
 }
 
@@ -79,7 +78,6 @@ h2 {
 .incorrect {
     background:red;
 }
-
 
 
 @media screen and (max-width: 768px) {

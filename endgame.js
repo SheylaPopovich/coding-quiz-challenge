@@ -8,7 +8,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const TOP_THREE_SCORES = 3;
 
 
-finalScore.innerText = mostRecentScore;
+finalScore.innerText = "Final Score: " + mostRecentScore;
 
 
 
@@ -31,7 +31,9 @@ saveHighScore = e => {
     highScores.sort((a, b) => b.score - a.score);
 
     highScores.splice(3);
-
-    console.log(highScores);
+    
+    localStorage.setItem("highScores", JSON.stringify(highScores));
 };
+
+const scoreList= document.getElementById("scoreList")
 

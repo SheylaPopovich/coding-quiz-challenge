@@ -1,7 +1,7 @@
 
 var timerEl = document.querySelector(".timer");
 
-var secondsLeft = 60;
+var secondsLeft = 80;
 
 function setTime() {
     var timerInterval = setInterval(function() {
@@ -14,7 +14,7 @@ function setTime() {
             location.href ="finalscore.html";
         } 
 
-    }, 600);
+    }, 800);
 }
 
 
@@ -102,13 +102,15 @@ const WRONG_ANSWERS = 5;
 const TOTAL_QUESTIONS = 7;
 
 
- function startGame () {
+ function startGame () {    
     questionCounter= 0;
     score = 0;
     availableQuestions= [...questions];
     //console.log(availableQuestions);
     getNewQuestion();
 };
+
+
 
 function getNewQuestion (){
     if(availableQuestions.length === 0 || questionCounter >= TOTAL_QUESTIONS){
@@ -145,7 +147,8 @@ choices.forEach( choice => {
         //set timer to decrease by 5 or 10 when wrong answer is selected
         if (classToApply === "incorrect") {
             secondsLeft -= 10;
-                }
+            timerEl.textContent = "wrong -10";
+           }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
