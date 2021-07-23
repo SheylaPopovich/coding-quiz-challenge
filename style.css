@@ -39,9 +39,9 @@ main {
     margin-right: 20%;
     padding-left: 5%;
     padding-right: 5%;
-    text-align:center;
     font-size: 1.2rem;
     font-family: 'Oswald', sans-serif;
+    text-align: center;
 } 
 
 
@@ -77,7 +77,7 @@ main {
 .startBtn[disabled] {
   cursor: default;
   background: #c0c7cf;
-}*/
+}
 
 
 
@@ -93,7 +93,7 @@ main {
 #username {
     margin-bottom: 3rem;
     width: 100%;
-    outline none;
+    outline: none;
 }
 
 #saveScoreBtn {
@@ -121,3 +121,21 @@ h2 {
     margin-left: 35%;
     margin-top: 5%;
   }
+
+
+  #scoreList {
+    list-style-type:decimal;
+}
+
+#clip-art{
+    height: 200px;
+    animation: ease-in;
+    animation-duration: 6s;
+    animate__backInDown
+}
+
+.scoreListContainer {
+    margin-left: 40%;
+    font-size: 1.8rem;
+}
+
