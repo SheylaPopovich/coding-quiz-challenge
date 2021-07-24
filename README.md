@@ -7,6 +7,7 @@ Are you a coding wiz?!? Well let's find out! Test your knowledge by playing this
 </br>
 
 ## __<p style="color:blue"> Final Project</p>__
+![project-video](https://user-images.githubusercontent.com/84256748/126740915-edf93cb4-ccd6-4f70-80df-aac0ea9ef722.gif)
 
 <br>
 </br>
