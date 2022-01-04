@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Over</title>
-    <link rel="stylesheet" href="./finalscore.css">
+    <link rel="stylesheet" href="../css/finalscore.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Odibee+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Odibee+Sans&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1>All done!</h1>
             <h2 id="finalScore"></h2>
-            <form >
-                <input
-                type="text" 
-                name="name"
-                id="username"
-                placeholder="Enter initials"/>
+            <form>
+                <input type="text" name="name" id="username" placeholder="Enter initials" />
 
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" >Save</button>
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Save</button>
             </form>
-        </div>   
-          <a href="index.html" class="btn">Play Again</a>
-          <a href="./highscore.html" class="btn" id="scoreNames">View Scores</a>
+        </div>
+        <a href="index.html" class="btn">Play Again</a>
+        <a href="./highscore.html" class="btn" id="scoreNames">View Scores</a>
     </div>
     <!-- <script src="./finalscore.js"></script> -->
     <script src="./endgame.js"></script>
 </body>
+
 </html>
