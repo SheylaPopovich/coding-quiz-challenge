@@ -92,7 +92,7 @@ let questions = [
   },
 ];
 
-//constants for highscore functions
+//constants for high score functions
 const WRONG_ANSWERS = 5;
 const TOTAL_QUESTIONS = 7;
 
