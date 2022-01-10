@@ -5,7 +5,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 scoreList.innerHTML = highScores
 
 .map(score => {
-   return `<li class="highscore">${score.name} -${score.score}</li>`;
+   return `<li class="highscore">${score.name} ${score.score}</li>`;
 })
 .join("");
 
